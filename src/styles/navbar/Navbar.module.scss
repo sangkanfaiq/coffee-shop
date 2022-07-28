@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    .imgbox {
+      display: flex;
+      width: 50%;
+      align-items: center;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      h1 {
+        margin: auto 1em;
+        font-size: 20px;
+        font-weight: 700;
+        color: #0b132a;
+        font-family: "Rubik", sans-serif;
+      }
+    }
+    .navmenu {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    .navlinks {
+      padding: 0 1.5em;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      font-family: "Rubik", sans-serif;
+      color: #4f5665;
+    }
+    .navlinks.active {
+      color: #6a4029;
+    }
+    .navbutton {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+
+      button {
+        padding: 10px 35px;
+        border-radius: 30px;
+        border: none;
+        font-family: "Rubik";
+        font-weight: 500;
+        color: #6a4029;
+        outline: none;
+        background: #ffba33;
+
+        &:nth-child(1) {
+          background: none;
+        }
+      }
+    }
+  }
+}
