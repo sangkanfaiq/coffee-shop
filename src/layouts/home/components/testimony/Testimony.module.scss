@@ -1,0 +1,28 @@
+.testimony {
+  margin-top: 12em;
+
+  .testiTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      width: 40%;
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 50px;
+      text-align: center;
+      color: #0b132a;
+    }
+    p {
+      font-family: "Rubik";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      color: #4f5665;
+    }
+  }
+}

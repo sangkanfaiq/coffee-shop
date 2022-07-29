@@ -1,0 +1,25 @@
+.partner {
+    margin-top: 10em;
+
+  .partnerTitle {
+    text-align: center;
+    h1 {
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 30px;
+      color: #0b132a;
+    }
+  }
+  .partnerBox {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 190px;
+        height: 60px;
+        margin: auto;
+    }
+  }
+}

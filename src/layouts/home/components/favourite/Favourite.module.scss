@@ -1,0 +1,117 @@
+.favourite {
+  margin-top: 10em;
+  width: 100%;
+
+  .favTitle {
+    text-align: center;
+
+    h1 {
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 50px;
+      color: #0b132a;
+    }
+    p {
+      font-family: "Rubik";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #4f5665;
+    }
+  }
+  .favContent {
+    width: 100%;
+
+    .favCard {
+      margin-top: 10em;
+      .favImg {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          z-index: 1;
+        }
+      }
+      .favBox.active {
+        border: 2px solid #6A4029;
+      }
+      .favBox {
+        margin-top: -3.5em;
+        height: 88vh;
+        border: 2px solid #DDDDDD;
+        border-radius: 20px;
+
+        &:hover {
+          border: 2px solid #6A4029;
+        }
+
+        .favDetails {
+          height: 68vh;
+
+          h2 {
+            font-family: "Rubik";
+            padding-top: 4em;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #0b132a;
+          }
+          .favDetailsInfo {
+            font-family: "Rubik";
+            font-weight: 500;
+            font-size: 13px;
+            padding: 10px 0;
+            line-height: 30px;
+            color: #4f5665;
+
+            span {
+              margin-left: 6em;
+              margin-right: 1.5em;
+            }
+          }
+        }
+        .favPrice {
+          font-family: "Rubik";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+          color: #0b132a;
+        }
+        .favButton {
+          margin-top: 1em;
+          display: flex;
+          justify-content: center;
+
+          button {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #ffba33;
+            border-radius: 50px;
+            font-family: "Rubik";
+            color: #6A4029;
+            background: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background: #ffba33;
+            }
+          }
+          button.active {
+            background: #ffba33;
+          }
+        }
+      }
+    }
+  }
+}

@@ -37,6 +37,11 @@
       font-weight: 600;
       font-family: "Rubik", sans-serif;
       color: #4f5665;
+      cursor: pointer;
+
+      &:hover {
+        color: #6a4029;
+      }
     }
     .navlinks.active {
       color: #6a4029;
@@ -53,10 +58,17 @@
         font-family: "Rubik";
         font-weight: 500;
         color: #6a4029;
-        outline: none;
         background: #ffba33;
+        outline: none;
+        border: 2px solid #ffba33;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #fff;
+        }
 
         &:nth-child(1) {
+          border: none;
           background: none;
         }
       }
