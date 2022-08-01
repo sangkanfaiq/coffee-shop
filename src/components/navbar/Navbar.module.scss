@@ -30,21 +30,22 @@
       width: 100%;
       justify-content: center;
       display: flex;
-    }
-    .navlinks {
-      padding: 0 1.5em;
-      font-size: 14px;
-      font-weight: 600;
-      font-family: "Rubik", sans-serif;
-      color: #4f5665;
-      cursor: pointer;
 
-      &:hover {
+      .navlinks {
+        padding: 0 1.5em;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #4f5665;
+        cursor: pointer;
+
+        &:hover {
+          color: #6a4029;
+        }
+      }
+      .navlinks.active {
         color: #6a4029;
       }
-    }
-    .navlinks.active {
-      color: #6a4029;
     }
     .navbutton {
       display: flex;
@@ -87,7 +88,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .navbar {
     .logo {
       display: flex;

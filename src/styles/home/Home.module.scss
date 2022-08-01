@@ -64,6 +64,11 @@
           .bannerIcon {
             margin-left: 10px;
             font-size: 20px;
+            transition: transform .5s;
+
+            &:hover {
+              transform: rotate(45deg);
+            }
           }
         }
       }
