@@ -12,17 +12,187 @@
       font-family: "Rubik";
       font-weight: 500;
       font-size: 35px;
-      line-height: 50px;
       text-align: center;
+      line-height: 50px;
       color: #0b132a;
     }
     p {
       font-family: "Rubik";
       font-weight: 400;
-      font-size: 16px;
       line-height: 30px;
+      font-size: 16px;
+      width: 50%;
       text-align: center;
       color: #4f5665;
+    }
+  }
+  .testiBox {
+    display: flex;
+    margin-top: 3em;
+
+    .testiCard.active {
+      border: 2px solid #6a4029;
+    }
+    .testiCard {
+      width: 100%;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      height: 30vh;
+      background: #fff;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        border: 2px solid #6a4029;
+      }
+
+      .testiDetails {
+        display: flex;
+        .testiImg {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          height: 10vh;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        .testiInfo {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 10vh;
+
+          .testiPeople {
+            padding-left: 1em;
+            h4 {
+              margin: 0;
+              font-family: "Rubik";
+              font-weight: 600;
+              font-size: 16px;
+              color: #0b132a;
+            }
+            p {
+              margin: 0;
+              font-family: "Rubik";
+              font-weight: 400;
+              font-size: 14px;
+              color: #4f5665;
+            }
+          }
+          .testiRating {
+            font-family: "Rubik";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #0b132a;
+            display: flex;
+            align-items: center;
+
+            .testiIcon {
+              margin-left: 0.3em;
+              font-size: 20px;
+              color: #fea250;
+            }
+          }
+        }
+      }
+      .testiContent {
+        margin-top: 1em;
+
+        p {
+          font-family: "Rubik";
+          font-weight: 400;
+          font-size: 15px;
+          color: #0b132a;
+        }
+      }
+    }
+  }
+  .testiPaginate {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+
+    .testiDots {
+      display: flex;
+      align-items: center;
+
+      .testiDot {
+        margin: 0 0.4em;
+        width: 13px;
+        border-radius: 50%;
+        height: 13px;
+        background: #dde0e4;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: #6a4029;
+        }
+      }
+      .testiDot.active {
+        width: 37px;
+        border-radius: 20px;
+        background: #6a4029;
+      }
+    }
+
+    .testiNavigate {
+      display: flex;
+
+      .navigateRound {
+        width: 40px;
+        height: 40px;
+        margin: 0 0.5em;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid #6a4029;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6a4029;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #6a4029;
+          color: #fff;
+        }
+
+        .navigateIcon {
+          font-size: 20px;
+        }
+      }
+      .navigateRound.active {
+        background: #6a4029;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimony {
+    .testiTitle {
+      h1 {
+        width: 90%;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      p {
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+    .testiBox {
+      flex-wrap: wrap;
+      gap: 1em;
     }
   }
 }

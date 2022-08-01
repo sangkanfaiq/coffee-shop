@@ -1,0 +1,203 @@
+.forgotLayout {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+
+  .leftFP {
+    background: url("../../../../public/images/img7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .bgTransparent {
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000, $alpha: 0.3);
+    }
+  }
+  .rightFP {
+    padding: 0 4em;
+
+    .rightBoxFP {
+      padding-top: 1em;
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .logoImg {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+
+          h1 {
+            padding-left: 0.5em;
+            margin: 0;
+            font-family: "Rubik";
+            font-weight: 700;
+            font-size: 20px;
+            color: #0b132a;
+          }
+        }
+      }
+      h2 {
+        margin-top: 1em;
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+        color: #0b132a;
+      }
+      p {
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #0b132a;
+      }
+
+      form {
+        margin-top: 4em;
+        padding: 0 4em;
+
+        input {
+          border: 1px solid #4f5665;
+          border-radius: 10px;
+          width: 100%;
+          font-weight: 500;
+          padding: 0px 20px;
+          height: 45px;
+          outline: none;
+          font-size: 14px;
+          margin-bottom: 1em;
+
+          &::placeholder {
+            color: #9f9f9f;
+          }
+        }
+        label {
+          padding-bottom: 1em;
+          font-family: "Rubik";
+          font-weight: 600;
+          font-size: 13px;
+          color: #4f5665;
+        }
+        button {
+          margin-top: 1em;
+          width: 100%;
+          height: 45px;
+          font-family: "Rubik";
+          font-weight: 600;
+          font-size: 16px;
+          color: #6a4029;
+          border: none;
+          outline: none;
+          background: #ffba33;
+          box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+          border-radius: 10px;
+          border: 2px solid #ffba33;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background: #fff;
+          }
+        }
+        .resendStatus {
+          font-family: "Rubik";
+          width: 100%;
+          margin: 2em 0;
+          text-align: center;
+          font-size: 16px;
+          color: #0b132a;
+
+          a {
+            text-decoration: underline;
+            color: #6a4029;
+          }
+
+          span {
+            font-weight: 700;
+          }
+        }
+        .resendLink {
+          button {
+            width: 100%;
+            height: 45px;
+            font-family: "Rubik";
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            outline: none;
+            background: #6a4029;
+            box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+            border-radius: 10px;
+            border: 2px solid #6a4029;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background: #fff;
+              color: #6a4029;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .forgotLayout {
+    .leftFP {
+      display: none;
+    }
+    .rightFP {
+      padding: 0;
+
+      .rightBoxFP {
+        .logo {
+          .logoImg {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            h1 {
+              font-size: 18px;
+            }
+          }
+        }
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 13px;
+        }
+        form {
+          button {
+            font-size: 14px;
+          }
+          .resendStatus {
+            font-size: 14px;
+          }
+          .resendLink {
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

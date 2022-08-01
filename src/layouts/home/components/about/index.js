@@ -4,8 +4,8 @@ import styles from "./About.module.scss";
 const About = () => {
   return (
     <>
-      <div className={`${styles.about} ${"row"}`}>
-        <div className={`${styles.aboutImg} ${"col-md-6"}`}>
+      <div className={`${styles.about} row`}>
+        <div className={`${styles.aboutImg} col-md-6`}>
           <img src="images/about.png" alt="images" />
         </div>
         <div className="col-md-6">

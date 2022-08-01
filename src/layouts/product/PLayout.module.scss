@@ -1,0 +1,15 @@
+.productLayout {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  .PLLeft {
+    margin-top: 2.5em;
+  }
+
+  .PLRight {
+    margin-top: 2.5em;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+  }
+}

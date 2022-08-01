@@ -53,21 +53,42 @@
         font-size: 15px;
         color: #6a4029;
         border: 2px solid #ffba33;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
-            background: #fff;
-            color: #6a4029;
-            width: 190px;
+          background: #fff;
+          color: #6a4029;
+          width: 190px;
         }
         span {
-            .bannerIcon {
-                margin-left: 10px;
-                font-size: 20px;
-            }
+          .bannerIcon {
+            margin-left: 10px;
+            font-size: 20px;
+          }
         }
       }
     }
   }
 }
 
+@media screen and (max-width: 768px){
+  .homepage {
+    background-position: center;
+
+    .banner {
+      .bannerContent {
+        padding: 7em 0;
+
+        h1 {
+          width: 100%;
+          font-size: 40px;
+          line-height: 60px;
+        }
+        p {
+          width: 90%;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@
       display: flex;
       width: 50%;
       align-items: center;
+      cursor: pointer;
 
       img {
         width: 25px;
@@ -70,7 +71,35 @@
         &:nth-child(1) {
           border: none;
           background: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
+      }
+    }
+    .navIcon {
+      display: none;
+      .icon {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .navbar {
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      .navmenu {
+        display: none;
+      }
+      .navbutton {
+        display: none;
+      }
+      .navIcon {
+        display: block;
       }
     }
   }

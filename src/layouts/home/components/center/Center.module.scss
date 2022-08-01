@@ -6,7 +6,13 @@
   box-shadow: 1px 1px 5px 0px rgb(190, 190, 190);
   height: 25vh;
   display: flex;
+  align-items: center;
 
+  .verticalLine {
+    width: 8px;
+    height: 60%;
+    background: #eeeff2;
+  }
   .centerBox {
     width: 100%;
     display: flex;
@@ -42,6 +48,28 @@
         font-weight: 700;
         font-size: 20px;
         color: #0b132a;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    margin-top: 3.5em;
+    height: 20vh;
+    .verticalLine {
+      height: 50%;
+    }
+    .centerBox {
+      .boxIcon {
+        width: 40px;
+        height: 40px;
+      }
+      .centerTitle {
+        font-size: 14px;
+        span {
+          font-size: 16px;
+        }
       }
     }
   }

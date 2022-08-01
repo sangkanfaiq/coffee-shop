@@ -16,6 +16,7 @@ const Center = () => {
           Staff
         </div>
       </div>
+      <div className={styles.verticalLine}></div>
       <div className={styles.centerBox}>
         <div className={styles.boxIcon}>
           <MdLocationOn className={styles.icon} />
@@ -25,6 +26,7 @@ const Center = () => {
           Stores
         </div>
       </div>
+      <div className={styles.verticalLine}></div>
       <div className={styles.centerBox}>
         <div className={styles.boxIcon}>
           <FavoriteBorderIcon className={styles.icon} />

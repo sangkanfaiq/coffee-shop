@@ -1,0 +1,38 @@
+.productMenu {
+  margin-top: 3em;
+
+  .menuDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5em;
+
+    .menuItem {
+      font-family: "Rubik";
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #9f9f9f;
+      cursor: pointer;
+
+      &:hover {
+        color: #6a4029;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 80%;
+          margin: auto;
+          padding-top: 8px;
+          border-bottom: 4px solid #6a4029;
+          margin-bottom: -12px;
+        }
+      }
+    }
+    .menuItem.active {
+      font-family: "Rubik";
+      font-weight: 700;
+      font-size: 18px;
+      color: #6a4029;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 .favourite {
   margin-top: 10em;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .favTitle {
     text-align: center;
@@ -25,6 +28,7 @@
 
     .favCard {
       margin-top: 10em;
+
       .favImg {
         display: flex;
         justify-content: center;
@@ -46,6 +50,7 @@
         height: 88vh;
         border: 2px solid #DDDDDD;
         border-radius: 20px;
+        transition: .2s ease-in-out;
 
         &:hover {
           border: 2px solid #6A4029;
@@ -109,6 +114,46 @@
           }
           button.active {
             background: #ffba33;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .favourite {
+    .favTitle {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      p {
+        width: 70%;
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .favContent {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      .favCard {
+        width: 85%;
+
+        .favBox {
+          height: 95vh;
+
+          .favPrice {
+            margin-top: 2em;
           }
         }
       }
