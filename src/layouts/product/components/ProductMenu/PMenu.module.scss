@@ -1,5 +1,5 @@
 .productMenu {
-  margin-top: 3em;
+  margin-top: 2.5em;
 
   .menuDetails {
     display: flex;
@@ -7,9 +7,9 @@
     padding: 0 5em;
 
     .menuItem {
-      font-family: "Rubik";
-      font-weight: 500;
-      font-size: 16px;
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 14px;
       line-height: 20px;
       color: #9f9f9f;
       cursor: pointer;
@@ -23,16 +23,24 @@
           width: 80%;
           margin: auto;
           padding-top: 8px;
-          border-bottom: 4px solid #6a4029;
-          margin-bottom: -12px;
+          border-bottom: 3px solid #6a4029;
+          margin-bottom: -11px;
         }
       }
     }
     .menuItem.active {
-      font-family: "Rubik";
       font-weight: 700;
-      font-size: 18px;
       color: #6a4029;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding-top: 8px;
+        border-bottom: 3px solid #6a4029;
+        margin-bottom: -11px;
+      }
     }
   }
 }
