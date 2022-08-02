@@ -16,7 +16,7 @@ const ProductDetailsLayout = () => {
         </div>
       </div>
       <div className={`${styles.bottom} row`}>
-        <div className="col-md-5">
+        <div className="col-md-4">
           <div className={styles.chooseBox}>
             <h4>Choose a size</h4>
             <div className={styles.sizeCard}>
@@ -26,7 +26,7 @@ const ProductDetailsLayout = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-7">
+        <div className="col-md-8">
           <div className={styles.checkout}>
             <img src="images/img8.png" alt="" />
             <div className={styles.checkoutDetails}>
