@@ -12,7 +12,7 @@ import Visit from "./components/visit";
 const HomeLayout = () => {
   return (
     <>
-      <div className={styles.homepage}>
+      <div className={styles.header}>
         <div className={styles.backgroundBlack}>
           <div className="container">
             <Banner />
