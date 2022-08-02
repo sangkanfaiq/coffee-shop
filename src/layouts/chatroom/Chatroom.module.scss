@@ -102,12 +102,12 @@
         }
         .horizontalLine {
           margin: 0;
-          padding: 0 2em;
+          padding: 0 1em;
 
           .line {
             height: 1px;
             width: 100%;
-            background: #fff;
+            background: rgba(255,255,255,0.3);
           }
         }
       }
