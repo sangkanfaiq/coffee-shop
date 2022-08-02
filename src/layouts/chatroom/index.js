@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Chatroom.module.scss";
 import { BiSearch } from "react-icons/bi";
 import { BsCheckAll } from "react-icons/bs";
+import { FiCamera } from 'react-icons/fi'
 
 const ChatroomLayout = () => {
   return (
@@ -65,7 +66,9 @@ const ChatroomLayout = () => {
                     where is it?
                   </p>
                   <div className={styles.statusInfo}>
-                    <BsCheckAll className={styles.statusIcon}/>
+                    <BsCheckAll
+                      className={`${styles.statusIcon} ${styles.active}`}
+                    />
                     02.14 PM
                   </div>
                 </div>
@@ -82,15 +85,38 @@ const ChatroomLayout = () => {
                 </div>
                 <div className={styles.textContent}>
                   <p>
-                    Hey jason, I can’t find the promo section. Can u tell me
-                    where is it?
+                    Hey, thanks for asking. It’s in product menu, you can see
+                    them on the left side.
                   </p>
                   <div className={styles.statusInfo}>
-                    <BsCheckAll className={styles.statusIcon}/>
+                    <BsCheckAll className={`${styles.statusIcon} ${styles.active}`} />
                     02.14 PM
                   </div>
                 </div>
               </div>
+              <div className={styles.hrLine}>
+                <div className={styles.line}></div>
+              </div>
+              <div className={styles.chatroomBoxContent}>
+                <div className={styles.textContent}>
+                  <p>
+                    Okay, thank you!
+                  </p>
+                  <div className={styles.statusInfo}>
+                    <BsCheckAll
+                      className={`${styles.statusIcon}`}
+                    />
+                    02.14 PM
+                  </div>
+                </div>
+                <div className={styles.userPict}>
+                  <img src="images/person7.png" alt="person" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.inputText}>
+              <input type="text" placeholder="Type a message..."/>
+              <FiCamera className={styles.inputIcon}/>
             </div>
           </div>
         </div>

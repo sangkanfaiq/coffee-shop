@@ -11,6 +11,7 @@
     .layoutLeft {
       background: var(--bg-primary);
       padding: 3em 0;
+      height: 130vh;
       border-radius: 30px 0 0 30px;
 
       .searchBox {
@@ -62,10 +63,11 @@
           transition: 0.3s ease-in-out;
 
           img {
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
           }
+
           .staffInfo {
             margin-left: 0.7em;
             display: flex;
@@ -74,7 +76,7 @@
 
             h4 {
               font-family: "Poppins";
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 700;
               color: #f0f0f0;
             }
@@ -85,6 +87,7 @@
               font-weight: 400;
               font-size: 12px;
               color: #f0f0f0;
+              letter-spacing: 0.5px;
             }
           }
 
@@ -113,6 +116,7 @@
       }
     }
     .layoutRight {
+      height: 130vh;
       padding: 3em;
       background: #fff;
       border-radius: 0 30px 30px 0;
@@ -122,16 +126,17 @@
         font-size: 20px;
         color: #444;
         font-family: "Poppins";
+        margin-bottom: 3em;
       }
       .chatroomBox {
+        height: 95vh;
         .chatroomBoxContent {
           display: flex;
           width: 100%;
-          margin-top: 3em;
-
+          
           .textContent {
             width: 100%;
-            padding-right: 2em;
+            padding-right: 1em;
 
             p {
               font-family: "Poppins";
@@ -147,8 +152,11 @@
               color: #888;
               .statusIcon {
                 font-size: 18px;
-                color: #222;
+                color: #666;
                 margin-right: 0.5em;
+              }
+              .statusIcon.active {
+                color: rgb(4, 107, 241);
               }
             }
           }
@@ -166,9 +174,9 @@
         }
         .hrLine {
           width: 100%;
-          height: 2px;
-          background: lightgray;
-          margin: 2em 0;
+          height: 1px;
+          background: rgb(187, 187, 187);
+          margin: 1em 0;
         }
         .chatroomBoxStaff {
           display: flex;
@@ -176,7 +184,7 @@
 
           .textContent {
             width: 100%;
-            padding-left: 2em;
+            padding-left: 1em;
 
             p {
               font-family: "Poppins";
@@ -195,8 +203,11 @@
 
               .statusIcon {
                 font-size: 18px;
-                color: #222;
+                color: #666;
                 margin-right: 0.5em;
+              }
+              .statusIcon.active {
+                color: rgb(4, 107, 241);
               }
             }
           }
@@ -211,6 +222,37 @@
               border-radius: 50%;
             }
           }
+        }
+      }
+      .inputText {
+        border: 1px solid lightgray;
+        height: 45px;
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+        border-radius: 30px;
+
+        input {
+          width: 95%;
+          background: none;
+          outline: none;
+          padding: 0 1em;
+          font-family: 'Poppins';
+          font-weight: 500;
+          font-size: 14px;
+          border: none;
+          color: #222;
+          letter-spacing: 0.5px;
+
+          &::placeholder {
+            color: #999;
+          }
+        }
+        .inputIcon {
+          font-size: 24px;
+          color: #777;
+          margin-right: 0.5em;
         }
       }
     }
