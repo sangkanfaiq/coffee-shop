@@ -1,0 +1,129 @@
+.pdRight {
+  margin-top: 1em;
+  padding: 2em 3em;
+
+  h1 {
+    margin-top: 1.5em;
+    font-family: "Poppins";
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+  }
+  .pdTitle {
+    margin: 2.5em auto;
+
+    h4 {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      color: #6a4029;
+      letter-spacing: 0.5px;
+    }
+    p {
+      margin-top: 3em;
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      color: #6a4029;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .quantityBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .quantiSquare {
+      display: flex;
+      .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        border: 1px solid #9f9f9f;
+        box-shadow: 0px 1px 5px 0px #777;
+
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--bg-primary);
+        background: #fff;
+      }
+      button {
+        border: 1px solid #9f9f9f;
+        padding: 5px 15px;
+        background: #fff;
+        box-shadow: 0px 1px 5px 0px #777;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: var(--bg-primary);
+          .squareIcon {
+            color: #fff;
+          }
+        }
+
+        &:nth-child(1) {
+          border-radius: 5px 0 0 5px;
+        }
+        &:nth-child(3) {
+          border-radius: 0 5px 5px 0;
+        }
+
+        .squareIcon {
+          font-size: 18px;
+          color: var(--bg-primary);
+        }
+      }
+    }
+    .quantiPrice {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 25px;
+      color: #333;
+    }
+  }
+  .btnAdd {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    button {
+      border-radius: 20px;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 55px;
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .cart {
+      background: var(--bg-primary);
+      color: #f0f0f0;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background: var(--bg-secondary);
+        color: var(--bg-primary);
+      }
+    }
+    .staff {
+      background: var(--bg-secondary);
+      color: var(--bg-primary);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background: var(--bg-primary);
+        color: #fff;
+      }
+    }
+  }
+}

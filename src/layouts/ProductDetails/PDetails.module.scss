@@ -1,0 +1,136 @@
+.pdLayout {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bottom {
+  margin: 2em 0;
+
+  .chooseBox {
+    background: #ffffff;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+    border-radius: 20px;
+    padding: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23vh;
+
+    h4 {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 20px;
+      color: #333;
+      text-align: center;
+    }
+    .sizeCard {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 1em;
+
+      button {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: var(--bg-secondary);
+        border: none;
+        outline: none;
+
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 16px;
+        color: #333;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: var(--bg-primary);
+          color: #fff;
+        }
+      }
+    }
+  }
+  .checkout {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    height: 23vh;
+
+    background: #fff;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.34);
+    border-radius: 20px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .checkoutDetails {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .coInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1em;
+
+        h4 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+        }
+        p {
+          font-size: 13px;
+          color: #666;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+      .co {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: "Poppins";
+        font-weight: 700;
+        font-size: 20px;
+        color: #333;
+
+        .coRound {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--bg-secondary);
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            background: var(--bg-primary);
+            .coIcon {
+              color: #fff;
+              transform: rotate(45deg);
+            }
+          }
+
+          .coIcon {
+            font-size: 18px;
+            color: var(--bg-primary);
+            transition: transform 0.5s;
+          }
+        }
+      }
+    }
+  }
+}

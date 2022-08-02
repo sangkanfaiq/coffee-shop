@@ -33,7 +33,7 @@
 
       .navlinks {
         padding: 0 1.5em;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         font-family: "Poppins", sans-serif;
         color: #4f5665;
@@ -45,6 +45,7 @@
       }
       .navlinks.active {
         color: #6a4029;
+        font-weight: 700;
       }
     }
     .navbutton {
@@ -59,10 +60,10 @@
         font-family: "Rubik", sans-serif;
         font-size: 14px;
         font-weight: 600;
-        color: #6a4029;
-        background: #ffba33;
+        color: var(--bg-primary);
+        background: var(--bg-secondary);
         outline: none;
-        border: 2px solid #ffba33;
+        border: 2px solid var(--bg-secondary);
         transition: all 0.3s ease-in-out;
 
         &:hover {

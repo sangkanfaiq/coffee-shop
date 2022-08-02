@@ -8,12 +8,12 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 10px;
     padding: 0 3.5em;
     box-shadow: 0px 1px 5px rgb(185, 185, 185);
     border: 2px solid #fff;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     &:hover {
       border: 2px solid lightgray;
@@ -47,17 +47,17 @@
         font-size: 14px;
         color: #6a4029;
         border: 2px solid #ffba33;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
 
         &:hover {
-            background: #fff;
+          background: #fff;
         }
       }
     }
   }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .promo {
     height: 30vh;
     .promoBox {
@@ -73,6 +73,38 @@
       .promoButton {
         button {
           width: 130px;
+          height: 40px;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .promo {
+    height: 25vh;
+    .promoBox {
+      padding: 0 1em;
+      flex-direction: column;
+      justify-content: center;
+      .promoContent {
+        width: 100%;
+
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 25px;
+        }
+        p {
+          text-align: center;
+          width: 100%;
+          font-size: 12px;
+        }
+      }
+      .promoButton {
+        button {
+          width: 150px;
           height: 40px;
           font-size: 13px;
           font-weight: 600;

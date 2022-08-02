@@ -19,13 +19,13 @@ const Footer = () => {
                 </div>
                 <div className={styles.footerSocial}>
                     <div className={styles.socialBox}>
-                        <Link href='/#'><FaFacebookF className={styles.socialIcon}/></Link>
+                        <Link href='https://www.facebook.com/'><div><FaFacebookF className={styles.socialIcon}/></div></Link>
                     </div>
                     <div className={styles.socialBox}>
-                        <Link href='/#'><FaTwitter className={styles.socialIcon}/></Link>
+                        <Link href='https://twitter.com/'><div><FaTwitter className={styles.socialIcon}/></div></Link>
                     </div>
                     <div className={styles.socialBox}>
-                        <Link href='/#'><FaInstagram className={styles.socialIcon}/></Link>
+                        <Link href='https://www.instagram.com/'><div><FaInstagram className={styles.socialIcon}/></div></Link>
                     </div>
                 </div>
                 <div className={styles.footerCopyright}>©2022 Coffee Store. All Right Reserved</div>

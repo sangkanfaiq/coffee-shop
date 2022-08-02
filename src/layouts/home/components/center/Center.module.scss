@@ -27,6 +27,15 @@
       height: 50px;
       border-radius: 50%;
       background: #ffba33;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--bg-primary);
+        .icon {
+          color: #fff;
+        }
+      }
 
       .icon {
         font-size: 20px;
@@ -69,6 +78,34 @@
         font-size: 14px;
         span {
           font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 468px) {
+  .center {
+    margin-top: 6.5em;
+    height: 13vh;
+    
+    .verticalLine {
+      width: 6px;
+      height: 50%;
+    }
+    .centerBox {
+      .boxIcon {
+        width: 30px;
+        height: 30px;
+
+        .icon {
+          font-size: 18px;
+          color: #6a4029;
+        }
+      }
+      .centerTitle {
+        font-size: 12px;
+        span {
+          font-size: 15px;
         }
       }
     }

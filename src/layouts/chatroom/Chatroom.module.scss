@@ -1,0 +1,113 @@
+.bgChatroom {
+  width: 100%;
+  background: salmon;
+  height: 100vh;
+
+  .chatroomLayout {
+    background: lightcyan;
+    margin: 0;
+
+    .layoutLeft {
+      background: var(--bg-primary);
+      padding: 3em 0;
+
+      .searchBox {
+        padding: 0 2em;
+      }
+      .searchbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 1em;
+        border-radius: 30px;
+        border: 1px solid lightgray;
+        background: #fff;
+
+        input {
+          width: 100%;
+          outline: none;
+          padding: 0 0.5em;
+          border: none;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Poppins";
+          color: #444;
+          background: none;
+        }
+        .searchIcon {
+          font-size: 25px;
+        }
+      }
+      h3 {
+        margin-top: 3em;
+        font-family: "Poppins";
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px;
+        color: #ffffff;
+      }
+      .staffBox {
+        margin-top: 2em;
+
+        .staffBoxContent {
+          display: flex;
+          padding: 1.5em 2em;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+          }
+          .staffInfo {
+            margin-left: 0.7em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h4 {
+              font-family: "Poppins";
+              font-size: 18px;
+              font-weight: 700;
+              color: #f0f0f0;
+            }
+            p {
+              text-align: left;
+              margin: 0;
+              font-family: "Poppins";
+              font-weight: 400;
+              font-size: 12px;
+              color: #f0f0f0;
+            }
+          }
+
+          &:hover {
+            background: var(--bg-secondary);
+            .staffInfo {
+              h4 {
+                color: #444;
+              }
+              p {
+                color: #444;
+              }
+            }
+          }
+        }
+        .horizontalLine {
+          margin: 0;
+          padding: 0 2em;
+
+          .line {
+            height: 1px;
+            width: 100%;
+            background: #fff;
+          }
+        }
+      }
+    }
+    .layoutRight {
+      background: #fff;
+    }
+  }
+}

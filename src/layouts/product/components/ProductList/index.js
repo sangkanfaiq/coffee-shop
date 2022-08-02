@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "./PDetails.module.scss";
+import styles from "./PList.module.scss";
+import Link from 'next/link'
 
-const ProductDetails = () => {
+const ProductList = () => {
   return (
-    <div className={styles.productDetails}>
-      <div className={styles.detailsMenu}>
+    <div className={styles.productList}>
+      <div className={styles.listMenu}>
         <div className={styles.menuCard}>
           <img src="products/veggie-tomato-mix.png" alt="" />
           <div className={styles.cardBorder}>
@@ -16,12 +17,14 @@ const ProductDetails = () => {
         </div>
         <div className={styles.menuCard}>
           <img src="products/hazelnut-latte.png" alt="" />
-          <div className={styles.cardBorder}>
-            <h2>Hazelnut Latte</h2>
-            <div className={styles.cardPrice}>
-              <p>IDR 25.000</p>
+          <Link href='/productdetails'>
+            <div className={styles.cardBorder}>
+              <h2>Hazelnut Latte</h2>
+              <div className={styles.cardPrice}>
+                <p>IDR 25.000</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className={styles.menuCard}>
           <img src="products/summer-fried-rice.png" alt="" />
@@ -118,4 +121,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductList;

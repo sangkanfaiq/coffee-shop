@@ -8,14 +8,10 @@ import Partner from "./components/partner";
 import Promo from "./components/promo";
 import Testimony from "./components/testimony";
 import Visit from "./components/visit";
-import Head from 'next/head'
 
 const HomeLayout = () => {
   return (
     <>
-      <Head>
-        <title>Home - Coffee Shop</title>
-      </Head>
       <div className={styles.homepage}>
         <div className={styles.backgroundBlack}>
           <div className="container">

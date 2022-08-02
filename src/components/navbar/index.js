@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./Navbar.module.scss";
-import {GoThreeBars} from 'react-icons/go'
+import { GoThreeBars } from 'react-icons/go'
 
 const Navbar = () => {
   return (

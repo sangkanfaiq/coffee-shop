@@ -11,7 +11,7 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
-      color: #9f9f9f;
+      color: #818181;
       cursor: pointer;
 
       &:hover {
@@ -40,6 +40,18 @@
         padding-top: 8px;
         border-bottom: 3px solid #6a4029;
         margin-bottom: -11px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .productMenu {
+    margin-top: 0;
+    .menuDetails {
+      padding: 0;
+      .menuItem {
+        font-size: 12px;
       }
     }
   }
