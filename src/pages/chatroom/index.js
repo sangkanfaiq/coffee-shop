@@ -2,6 +2,7 @@ import React from "react";
 import NavbarLogin from "../../components/navbarLogin";
 import ChatroomLayout from "../../layouts/chatroom";
 import Head from 'next/head'
+import Footer from '../../components/footer'
 
 const Chatroom = () => {
   return (
@@ -11,6 +12,7 @@ const Chatroom = () => {
       </Head>
       <NavbarLogin />
       <ChatroomLayout />
+      <Footer />
     </>
   );
 };

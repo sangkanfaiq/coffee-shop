@@ -1,41 +1,47 @@
 .bgChatroom {
   width: 100%;
-  background: salmon;
-  height: 100vh;
+  background: url('../../../public/images/img9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em;
 
   .chatroomLayout {
-    background: lightcyan;
     margin: 0;
 
     .layoutLeft {
       background: var(--bg-primary);
       padding: 3em 0;
+      border-radius: 30px 0 0 30px;
 
       .searchBox {
         padding: 0 2em;
-      }
-      .searchbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5em 1em;
-        border-radius: 30px;
-        border: 1px solid lightgray;
-        background: #fff;
+        .searchbar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.3em 1em;
+          border-radius: 30px;
+          border: 1px solid lightgray;
+          background: #fff;
 
-        input {
-          width: 100%;
-          outline: none;
-          padding: 0 0.5em;
-          border: none;
-          font-size: 14px;
-          font-weight: 500;
-          font-family: "Poppins";
-          color: #444;
-          background: none;
-        }
-        .searchIcon {
-          font-size: 25px;
+          input {
+            width: 100%;
+            outline: none;
+            padding: 0 0.5em;
+            border: none;
+            font-size: 13px;
+            font-weight: 500;
+            font-family: "Poppins";
+            color: #333;
+            background: none;
+
+            &::placeholder {
+              color: #888;
+            }
+          }
+          .searchIcon {
+            font-size: 25px;
+          }
         }
       }
       h3 {
@@ -107,7 +113,121 @@
       }
     }
     .layoutRight {
+      padding: 3em;
       background: #fff;
+      border-radius: 0 30px 30px 0;
+
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #444;
+        font-family: "Poppins";
+      }
+      .chatroomBox {
+        .chatroomBoxContent {
+          display: flex;
+          width: 100%;
+          margin-top: 3em;
+
+          .textContent {
+            width: 100%;
+            padding-right: 2em;
+
+            p {
+              font-family: "Poppins";
+              font-weight: 500;
+              text-align: right;
+              font-size: 14px;
+              line-height: 22px;
+              color: #444;
+            }
+            .statusInfo {
+              padding: 0 3em;
+              font-size: 10px;
+              color: #888;
+              .statusIcon {
+                font-size: 18px;
+                color: #222;
+                margin-right: 0.5em;
+              }
+            }
+          }
+          .userPict {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+        }
+        .hrLine {
+          width: 100%;
+          height: 2px;
+          background: lightgray;
+          margin: 2em 0;
+        }
+        .chatroomBoxStaff {
+          display: flex;
+          width: 100%;
+
+          .textContent {
+            width: 100%;
+            padding-left: 2em;
+
+            p {
+              font-family: "Poppins";
+              font-weight: 500;
+              text-align: left;
+              font-size: 14px;
+              line-height: 22px;
+              color: #444;
+            }
+            .statusInfo {
+              font-size: 10px;
+              color: #888;
+              display: flex;
+              padding-right: 2em;
+              justify-content: flex-end;
+
+              .statusIcon {
+                font-size: 18px;
+                color: #222;
+                margin-right: 0.5em;
+              }
+            }
+          }
+          .userPict {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .bgChatroom {
+    padding: 5em 0;
+    .chatroomLayout {
+      .layoutLeft {
+        border-radius: 30px;
+      }
+      .layoutRight {
+        margin-top: 2em;
+        border-radius: 30px;
+      }
     }
   }
 }
