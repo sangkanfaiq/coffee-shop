@@ -1,6 +1,9 @@
 import "../styles/globals.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import { useEffect } from "react";
+import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react'
+import { store, persistor } from '../redux/store'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -9,7 +12,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} />;
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Component {...pageProps} />;
+        </PersistGate>
+      </Provider>
     </>
   );
 }

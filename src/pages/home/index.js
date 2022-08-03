@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../../components/footer";
-import Navbar from "../../components/navbar";
 import HomeLayout from "../../layouts/home";
 import Head from 'next/head'
+import NavbarisLogin from "../../components";
 
 const Homepage = () => {
   return (
@@ -10,7 +10,7 @@ const Homepage = () => {
       <Head>
         <title>Coffee Shop</title>
       </Head>
-      <Navbar />
+      <NavbarisLogin/>
       <HomeLayout />
       <Footer />
     </>

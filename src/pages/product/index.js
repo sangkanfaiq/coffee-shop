@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '../../components/footer'
-import NavbarLogin from '../../components/navbarLogin'
 import ProductLayout from '../../layouts/product'
 import Head from "next/head";
+import NavbarisLogin from '../../components';
 
 const Product = () => {
   return (
@@ -10,7 +10,7 @@ const Product = () => {
     <Head>
       <title>Product - Coffee Shop</title>
     </Head>
-    <NavbarLogin />
+    <NavbarisLogin />
     <ProductLayout />
     <Footer />
     </>

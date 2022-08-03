@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Signin.module.scss";
 import Link from "next/link";
+import { AuthLogin } from "../../../redux/actions/Auth";
+import { useRouter } from "next/router";
+import { useDispatch, useSelector } from "react-redux";
+import Swal from "sweetalert2";
 
 const SigninLayout = () => {
+  let router = useRouter();
+  const dispatch = useDispatch();
+  const { error, loading, isLogin } = useSelector((state) => state.auth);
+  const [formLogin, setFormLogin] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    dispatch(AuthLogin(formLogin));
+  };
+
+  useEffect(() => {
+    if (isLogin === true) {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Login Success",
+        showConfirmButton: false,
+        timer: 1500,
+        width: "20em",
+        height: "5em",
+      });
+      setTimeout(() => {
+        router.replace("/");
+      }, 1600);
+    } else {
+      router.push("/auth/signin");
+    }
+  }, [isLogin]);
+
   return (
     <>
       <div className={`${styles.signinLayout} row`}>
         <div className={`${styles.leftSI} col-md-6`}>
-            <div className={styles.bgTransparent}></div>
+          <div className={styles.bgTransparent}></div>
         </div>
         <div className={`${styles.rightSI} col-md-6`}>
           <div className={styles.rightBoxSI}>
@@ -25,13 +61,20 @@ const SigninLayout = () => {
               </div>
             </div>
             <h2>Sign In</h2>
-            <form>
+            <form onSubmit={handleLogin}>
               <label htmlFor="">Email Address</label>
               <br />
               <input
+                name="email"
                 type="text"
                 placeholder="Enter your email address"
                 required
+                onChange={(e) => {
+                  setFormLogin((prevData) => ({
+                    ...prevData,
+                    email: e.target.value,
+                  }));
+                }}
               />
               <br />
               <label htmlFor="">Password</label>
@@ -40,16 +83,33 @@ const SigninLayout = () => {
                 type="password"
                 placeholder="Enter your password"
                 required
+                onChange={(e) => {
+                  setFormLogin((prevData) => ({
+                    ...prevData,
+                    password: e.target.value,
+                  }));
+                }}
               />
               <br />
               <div className={styles.forgotPass}>
-                <Link href='/auth/forgotpassword'>Forgot Password?</Link>
+                <Link href="/auth/forgotpassword">Forgot Password?</Link>
               </div>
-              <button type="submit">Sign In</button>
+              {loading ? (
+                <button className="btn btn-primary" disabled={true}>
+                  Loading...
+                </button>
+              ) : (
+                <button>Sign In</button>
+              )}
+              {error && (
+                <div className="text-center mt-3" style={{ color: "red" }}>
+                  {error.message}
+                </div>
+              )}
               <br />
               <div className={styles.withGoogle}>
                 <span>
-                  <img src="/icon/google.svg" alt="google" title="Google"/>
+                  <img src="/icon/google.svg" alt="google" title="Google" />
                 </span>
                 Sign in with Google
               </div>
