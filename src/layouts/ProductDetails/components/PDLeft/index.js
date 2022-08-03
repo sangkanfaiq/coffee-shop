@@ -3,8 +3,10 @@ import styles from './PDLeft.module.scss'
 import { FiChevronsRight } from "react-icons/fi";
 
 const PDLeft = () => {
+  
   return (
     <div className={styles.pdLeft}>
+      {}
       <div className={styles.pdDirection}>
         Favourite & Promo <FiChevronsRight />
         <span> Cold Brew</span>

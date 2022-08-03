@@ -14,11 +14,6 @@ const NavbarLogin = () => {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
   const { isLogin } = useSelector((state) => state.auth);
-  useEffect(() => {
-    if (isLogin == false) {
-      router.push("/");
-    }
-  }, [isLogin]);
 
   return (
     <nav className={styles.navbarLogin}>
@@ -86,6 +81,7 @@ const NavbarLogin = () => {
                   <button
                     onClick={() => {
                       dispatch(AuthLogout());
+                      router.push('/auth/signin')
                     }}
                   >
                     <span>Logout</span>

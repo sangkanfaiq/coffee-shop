@@ -4,15 +4,15 @@ import PDRight from "./components/PDRight";
 import PDLeft from "./components/PDLeft";
 import { ImArrowRight2 } from "react-icons/im";
 
-const ProductDetailsLayout = () => {
+const ProductDetailsLayout = ({id}) => {
   return (
     <div className="container">
       <div className={`${styles.pdLayout} row`}>
         <div className="col-md-5">
-          <PDLeft />
+          <PDLeft/>
         </div>
         <div className="col-md-7">
-          <PDRight />
+          <PDRight/>
         </div>
       </div>
       <div className={`${styles.bottom} row`}>

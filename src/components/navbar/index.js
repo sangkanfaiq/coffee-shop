@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className={styles.logo}>
             <Link href="/">
               <div className={styles.imgbox}>
-                <img src="logo/coffee.svg" alt="logo" title="Coffee Shop" />
+                <img src="/logo/coffee.svg" alt="logo" title="Coffee Shop" />
                 <h1>Coffee Shop</h1>
               </div>
             </Link>

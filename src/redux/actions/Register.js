@@ -1,4 +1,5 @@
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const RegisterRequest = () => {
   return {
@@ -27,12 +28,10 @@ export const AuthRegister = (formData) => {
       method: "POST",
       url: "http://localhost:3069/api/v1/auth/register",
       data: {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        phoneNumber: formData.phoneNumber,
         email: formData.email,
         password: formData.password,
-      }
+        phone: formData.phone,
+      },
     })
       .then((res) => {
         dispatch(RegisterSuccess(res.data.data));

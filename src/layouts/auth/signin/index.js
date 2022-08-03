@@ -102,7 +102,7 @@ const SigninLayout = () => {
                 <button>Sign In</button>
               )}
               {error && (
-                <div className="text-center mt-3" style={{ color: "red" }}>
+                <div className="text-center mt-4" style={{ color: "red", fontSize: "14px", fontWeight: "bold" }}>
                   {error.message}
                 </div>
               )}
