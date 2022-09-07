@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./PList.module.scss";
 import Link from "next/link";
-import axios from "axios";
 
-const ProductList = () => {
-  const [product, setProduct] = useState([]);
-
-  useEffect(() => {
-    axios({
-      method: "GET",
-      url: "http://localhost:3069/api/v1/products",
-    })
-      .then((res) => {
-        setProduct(res.data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+const ProductList = ({data}) => {
+  const product = data.data
 
   return (
     <>

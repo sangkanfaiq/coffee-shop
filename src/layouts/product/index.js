@@ -3,7 +3,8 @@ import ProductPromo from "./components/ProductPromo";
 import styles from "./PLayout.module.scss";
 import ProductList from "./components/ProductList";
 
-const ProductLayout = () => {
+const ProductLayout = ({data}) => {
+  console.log(data, 'dari product layout')
   return (
     <>
       <div className={`${styles.productLayout} row`}>
@@ -11,7 +12,7 @@ const ProductLayout = () => {
           <ProductPromo />
         </div>
         <div className={`${styles.PLRight} col-md-8`}>
-          <ProductList />
+          <ProductList data={data} />
         </div>
       </div>
     </>
