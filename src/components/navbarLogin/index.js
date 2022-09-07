@@ -80,6 +80,7 @@ const NavbarLogin = () => {
                 {isLogin ? (
                   <button
                     onClick={() => {
+                      alert('You has been logout')
                       dispatch(AuthLogout());
                       router.push('/auth/signin')
                     }}

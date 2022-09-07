@@ -42,11 +42,18 @@
         &:hover {
           color: #6a4029;
         }
+
+        &:active {
+          color: #6a4029;
+        }
+        &:focus {
+          color: #6a4029;
+        }
       }
-      .navlinks.active {
-        color: #6a4029;
-        font-weight: 700;
-      }
+      // .navlinks.active {
+      //   color: #6a4029;
+      //   font-weight: 700;
+      // }
     }
     .navbutton {
       display: flex;
